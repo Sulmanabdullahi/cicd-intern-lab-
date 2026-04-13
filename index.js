@@ -20,3 +20,6 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
 }
 module.exports = app;
+app.get('/goodbye', (req, res) => {
+  res.json({ message: 'Goodbye! See you next time.' });
+});
