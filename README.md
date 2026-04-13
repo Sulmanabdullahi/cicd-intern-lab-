@@ -15,7 +15,6 @@ A simple Node.js REST API built during a CI/CD internship lab.
 ## Setup
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/cicd-intern-lab.git
 cd cicd-intern-lab
 npm install
 ```
