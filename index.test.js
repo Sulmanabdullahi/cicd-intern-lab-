@@ -15,3 +15,8 @@ const response = await request(app).get('/add/3/4');
 expect(response.status).toBe(200);
 expect(response.body.result).toBe(7);
 });
+test('GET /goodbye returns goodbye message', async () => {
+  const response = await request(app).get('/goodbye');
+  expect(response.status).toBe(200);
+  expect(response.body.message).toBe('Goodbye! See you next time.');
+});
